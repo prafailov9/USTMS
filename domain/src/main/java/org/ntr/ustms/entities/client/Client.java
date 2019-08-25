@@ -13,19 +13,18 @@ public class Client {
     // TODO: add client number field when number generating logic is fully implemented;
     private Long id;
 
-    public Long getId() {
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String age;
+    
+     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
-    
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String age;
-    
     
     public String getFirstName() {
         return firstName;

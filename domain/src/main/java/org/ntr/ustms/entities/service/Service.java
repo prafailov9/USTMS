@@ -9,10 +9,10 @@ import org.ntr.ustms.entities.supporter.Supporter;
  *
  * @author Rafailov
  */
-public class Service {
-        
+public abstract class Service {
+
     private Long id;
-    
+
     private String serviceName;
     private List<Issue> issues;
     private List<Supporter> supporter;
@@ -52,10 +52,10 @@ public class Service {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 67 * hash + Objects.hashCode(this.id);
-        hash = 67 * hash + Objects.hashCode(this.serviceName);
-        hash = 67 * hash + Objects.hashCode(this.issues);
-        hash = 67 * hash + Objects.hashCode(this.supporter);
+        hash = 79 * hash + Objects.hashCode(this.id);
+        hash = 79 * hash + Objects.hashCode(this.serviceName);
+        hash = 79 * hash + Objects.hashCode(this.issues);
+        hash = 79 * hash + Objects.hashCode(this.supporter);
         return hash;
     }
 
